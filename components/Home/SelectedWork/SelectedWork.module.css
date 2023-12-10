@@ -1,0 +1,60 @@
+/* components/Home/SelectedWork/SelectedWork.module.css */
+
+.selectedWork {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    height: 2787px;
+    position: relative;
+}
+
+.textWrapper {
+    align-self: stretch;
+    color: #000000;
+    font-family: var(--h1-font-family);
+    font-size: var(--h1-font-size);
+    font-style: var(--h1-font-style);
+    font-weight: var(--h1-font-weight);
+    letter-spacing: var(--h1-letter-spacing);
+    line-height: var(--h1-line-height);
+    margin-top: -1px;
+    position: relative;
+}
+
+.frame {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 54px;
+    position: relative;
+    width: 100%;
+}
+
+.div {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+}
+
+.frame2 {
+    align-self: stretch;
+    background-color: #000000;
+    height: 456px;
+    position: relative;
+    width: 100%;
+}
+
+.frame3 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+}
