@@ -1,15 +1,17 @@
-import React from 'react';
+import React from "react";
+import styles from "./Navbar.module.css";
+import Image from 'next/image';
 
 const Navbar: React.FC = () => {
     return (
-        <div className="Navbar w-full max-w-[1200px] px-4 md:px-8 py-4 mx-auto">
-            <div className="Item w-full flex justify-between items-center">
-                <div className="Bio text-black text-2xl font-medium font-['Inter']">BIO</div>
-                <div className="About text-black text-2xl font-medium font-['Inter']">ABOUT</div>
-                <div className="Projects text-black text-2xl font-medium font-['Inter']">PROJECTS</div>
-                <div className="Contact text-black text-2xl font-medium font-['Inter']">CONTACT</div>
+        <div className={styles.navbar}>
+            <div className={styles.div}>
+                <div className={styles.textWrapper}>BIO</div>
+                <div className={styles.textWrapper}>ABOUT</div>
+                <div className={styles.textWrapper}>PROJECTS</div>
+                <div className={styles.textWrapper}>CONTACT</div>
             </div>
-            <div className="Line1 w-full h-[0px] border-2 border-black"></div>
+            <Image className={styles.line} alt="Line" src="/line-1.svg" width={1440} height={2} />
         </div>
     );
 };
