@@ -1,0 +1,40 @@
+/* components/Home/HeroSection/HeroSection.module.css */
+
+.heroSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    position: relative;
+}
+
+.textWrapper {
+    align-self: stretch;
+    color: #000000;
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    font-style: var(--title-font-style);
+    font-weight: var(--title-font-weight);
+    letter-spacing: var(--title-letter-spacing);
+    line-height: var(--title-line-height);
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+}
+
+.frame {
+    align-self: stretch;
+    background-color: #000000;
+    height: 740px;
+    position: relative;
+    width: 100%;
+}
+
+.line {
+    align-self: stretch;
+    height: 2px;
+    position: relative;
+    width: 100%;
+}
+
+/* Add more styles as needed */
