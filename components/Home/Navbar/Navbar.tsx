@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
                 <div className={styles.textWrapper}>PROJECTS</div>
                 <div className={styles.textWrapper}>CONTACT</div>
             </div>
-            <Image className={styles.line} alt="Line" src="/line-1.svg" width={1440} height={2} />
+            <Image className={styles.line} alt="Line" src="assets/Line.svg" width={1440} height={2} />
         </div>
     );
 };
