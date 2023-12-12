@@ -1,7 +1,5 @@
-// components/Home/AboutSection/AboutSection.tsx
-
 import React from "react";
-import styles from "./AboutSection.module.css"; // Import styles from module.css
+import styles from "./AboutSection.module.css";
 
 const AboutSection: React.FC = () => {
     return (
@@ -18,7 +16,7 @@ const AboutSection: React.FC = () => {
                     <div className={styles.textWrapper3}>READ MORE</div>
                 </div>
             </div>
-            <div className={styles.line} />
+            <img className={styles.line} alt="Line" src="assets/Line.svg" width="100%" height={2} />
         </div>
     );
 };
