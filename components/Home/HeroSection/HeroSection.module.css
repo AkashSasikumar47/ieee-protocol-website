@@ -29,10 +29,23 @@
 }
 
 .line {
-    align-self: stretch;
     height: 2px;
-    position: relative;
     width: 100%;
+    background-color: #000000;
+}
+
+@media (max-width: 1330px) {
+    .textWrapper {
+        font-size: 96px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .textWrapper {
+        font-size: 64px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -41,9 +54,11 @@
         margin-bottom: 32px;
     }
 
-    .textWrapper{
-        font-size: 32px;
+    .textWrapper {
+        font-size: var(--title-font-size);
+        font-weight: var(--title-font-weight);
     }
+
     .frame {
         height: 400px;
     }
