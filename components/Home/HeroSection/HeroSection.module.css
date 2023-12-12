@@ -1,11 +1,10 @@
-/* components/Home/HeroSection/HeroSection.module.css */
-
 .heroSection {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 54px;
     position: relative;
+    margin-bottom: 54px;
 }
 
 .textWrapper {
@@ -17,7 +16,6 @@
     font-weight: var(--title-font-weight);
     letter-spacing: var(--title-letter-spacing);
     line-height: var(--title-line-height);
-    margin-top: -1px;
     position: relative;
     text-align: center;
 }
@@ -37,4 +35,16 @@
     width: 100%;
 }
 
-/* Add more styles as needed */
+@media (max-width: 768px) {
+    .heroSection {
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .textWrapper{
+        font-size: 32px;
+    }
+    .frame {
+        height: 400px;
+    }
+}
