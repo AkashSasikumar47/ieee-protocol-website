@@ -1,11 +1,10 @@
-/* components/Home/MyProcessSection/MyProcessSection.module.css */
-
 .myProcessSection {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 54px;
     position: relative;
+    margin-bottom: 54px;
 }
 
 .textWrapper {
@@ -69,8 +68,7 @@
 }
 
 .line {
-    align-self: stretch;
     height: 2px;
-    position: relative;
     width: 100%;
+    background-color: #000000;
 }
