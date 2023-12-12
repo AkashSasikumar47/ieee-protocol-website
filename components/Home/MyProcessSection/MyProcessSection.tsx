@@ -1,7 +1,5 @@
-// components/Home/MyProcessSection/MyProcessSection.tsx
-
 import React from "react";
-import styles from "./MyProcessSection.module.css"; // Import styles from module.css
+import styles from "./MyProcessSection.module.css";
 
 const MyProcessSection: React.FC = () => {
     return (
@@ -57,7 +55,7 @@ const MyProcessSection: React.FC = () => {
                     </p>
                 </div>
             </div>
-            <img className={styles.line} alt="Line" src="line-7.svg" />
+            <img className={styles.line} alt="Line" src="assets/Line.svg" width="100%" height={2} />
         </div>
     );
 };
