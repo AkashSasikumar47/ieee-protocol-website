@@ -1,5 +1,3 @@
-/* components/Home/FooterSection/FooterSection.module.css */
-
 .footerSection {
     align-items: center;
     display: flex;
@@ -119,12 +117,20 @@
 
 .textWrapper4 {
     align-self: stretch;
-    color: #000000;
+    color: #00000050;
     font-family: "Roboto-Regular", Helvetica;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
     line-height: normal;
     position: relative;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .textWrapper4 {
+        font-size: 12px;
+        font-weight: 200px;
+    }
 }
