@@ -1,5 +1,3 @@
-// components/Home/HeroSection/HeroSection.tsx
-
 import React from "react";
 import styles from "./HeroSection.module.css";
 import Image from 'next/image';
