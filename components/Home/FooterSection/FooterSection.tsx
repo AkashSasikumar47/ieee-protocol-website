@@ -1,7 +1,5 @@
-// components/Home/FooterSection/FooterSection.tsx
-
 import React from "react";
-import styles from "./FooterSection.module.css"; // Import styles from module.css
+import styles from "./FooterSection.module.css";
 
 const FooterSection: React.FC = () => {
     return (
@@ -26,7 +24,7 @@ const FooterSection: React.FC = () => {
                     <div className={styles.textWrapper3}>INSTAGRAM</div>
                 </div>
             </div>
-            <div className={styles.textWrapper4}>©Akash Sasikumar 2024</div>
+            <div className={styles.textWrapper4}>&#169; {new Date().getFullYear()} Akash Sasikumar. All rights reserved.</div>
         </div>
     );
 };
