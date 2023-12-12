@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import Image from 'next/image';
 
 const Navbar: React.FC = () => {
     return (
@@ -11,7 +10,7 @@ const Navbar: React.FC = () => {
                 <div className={styles.textWrapper}>PROJECTS</div>
                 <div className={styles.textWrapper}>CONTACT</div>
             </div>
-            <Image className={styles.line} alt="Line" src="assets/Line.svg" width={1440} height={2} />
+            <img className={styles.line} alt="Line" src="assets/Line.svg" width="100%" height={2} />
         </div>
     );
 };
