@@ -29,7 +29,7 @@ const SelectedWork: React.FC = () => {
             <Project
                 title="LEAD MANAGEMENT SYSTEM"
                 category="FULL STACK DEVELOPMENT"
-                description="Streamline lead, proposal, event, invoice, and engagement management in the catering and event planning industry. This repo houses the source code for the comprehensive Lead Management System, ready for development, deployment, and continuous improvement. Explore organized sections for targeted functionalities!"
+                description="Streamline lead, proposal, invoice, and engagement management in the catering and event planning industry. This repo houses the source code for the comprehensive Lead Management System, ready for development, deployment, and continuous improvement. Explore organized sections for targeted functionalities!"
             />
             <Project
                 title="STOCK-INFO WEB-APP"
