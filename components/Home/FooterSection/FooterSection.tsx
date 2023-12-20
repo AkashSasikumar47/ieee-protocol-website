@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./FooterSection.module.css";
+import Image from 'next/image';
 
 const FooterSection: React.FC = () => {
     return (
         <div className={styles.footerSection}>
-            <div className={styles.frame} />
+            <Image className={styles.image} alt="Footer Image" src="/assets/images/ContactSecion_Image.jpg" width={1920} height={1080} />
             <div className={styles.div}>
                 <div className={styles.letsWorkTogether}>LET'S WORK TOGETHER</div>
                 <p className={styles.whetherYoure}>
