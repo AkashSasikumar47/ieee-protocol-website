@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./AboutSection.module.css";
+import Image from 'next/image';
 
 const AboutSection: React.FC = () => {
     return (
         <div className={styles.aboutSection}>
-            <div className={styles.frame} />
+            <Image className={styles.customImage} alt="Custom Image" src="/assets/images/AboutSection_Image.jpg" layout="responsive" width={500} height={300} />
             <div className={styles.div}>
                 <div className={styles.textWrapper}>SOFTWARE DEVELOPER</div>
                 <p className={styles.helloIMAkash}>
@@ -16,7 +17,7 @@ const AboutSection: React.FC = () => {
                     <div className={styles.textWrapper3}>READ MORE</div>
                 </div>
             </div>
-            <img className={styles.line} alt="Line" src="assets/Line.svg" width="100%" height={2} />
+            <img className={styles.line} alt="Line" src="/assets/Line.svg" width="100%" height={2} />
         </div>
     );
 };
