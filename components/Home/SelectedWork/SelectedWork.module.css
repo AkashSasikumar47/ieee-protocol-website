@@ -125,3 +125,8 @@
     position: relative;
     width: 100%;
 }
+
+.imageWrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
