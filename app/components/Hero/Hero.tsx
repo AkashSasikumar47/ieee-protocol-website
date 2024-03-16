@@ -15,9 +15,6 @@ const Hero = () => {
                             className="absolute inset-0 h-full w-full object-cover object-center"
                         />
                         {/* image - end */}
-                        {/* overlay - start */}
-                        <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
-                        {/* overlay - end */}
                         {/* text start */}
                         <div className="relative flex flex-col items-center p-4 sm:max-w-xl">
                             <p className="mb-4 text-center text-lg text-gray-200 sm:text-xl md:mb-8">

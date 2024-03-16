@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Winners = () => {
+const Themes = () => {
     return (
         <div>
 
@@ -78,4 +78,4 @@ const Winners = () => {
     )
 }
 
-export default Winners
+export default Themes

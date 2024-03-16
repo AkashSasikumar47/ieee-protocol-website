@@ -5,14 +5,13 @@ import Head from 'next/head';
 
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
-import Winners from './components/Winners/Winners';
 import Sponsors from './components/Sponsors/Sponsors';
 import About from './components/About/About';
-import AboutTechTrek from './components/AboutTechTrek/AboutTechTrek';
+import Themes from './components/Themes/Themes';
 import Speakers from './components/Speakers/Speakers';
-import Mentors from './components/Mentors/Mentors';
-import Workflow from './components/Workflow/Workflow';
+import Highlights from './components/Highlights/Highlights';
 import EventTimeline from './components/EventTimeline/EventTimeline';
+import Mentors from './components/Mentors/Mentors';
 import FAQ from './components/FAQ/FAQ';
 import Testimonial from './components/Testimonial/Testimonial';
 import Footer from './components/Footer/Footer';
@@ -39,17 +38,17 @@ const HomePage: React.FC = () => {
 
       <Navbar />
       <Hero />
-      <Winners />
       <Sponsors />
       <About />
-      <AboutTechTrek />
+      <Themes />
       <Speakers />
-      <Mentors />
-      <Workflow />
+      <Highlights />
       <EventTimeline />
+      <Mentors />
       <FAQ />
       <Testimonial />
       <Footer />
+      
     </div>
   );
 };

@@ -4,60 +4,47 @@ const About = () => {
     return (
         <div>
 
-            <div className="bg-white py-6 sm:py-8 lg:py-12">
-                <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
-                        <div>
-                            <div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto">
+            <div className="bg-gray-200 pb-6 sm:pb-8 lg:pb-12">
+                <section className="mx-auto max-w-screen-2xl px-4 md:px-8">
+                    <div className="mb-8 flex flex-wrap justify-between md:mb-16">
+                        <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48">
+                            <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl">
+                                Find your
+                                <br />
+                                style online
+                            </h1>
+                            <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
+                                This is a section of some simple filler text, also known as
+                                placeholder text. It shares characteristics of real text.
+                            </p>
+                        </div>
+                        <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
+                            <div className="relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">
                                 <img
-                                    src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600&h=750"
+                                    src="https://images.unsplash.com/photo-1542340916-951bb72c8f74?auto=format&q=75&fit=crop&w=550&h=550"
                                     loading="lazy"
-                                    alt="Photo by Martin Sanchez"
+                                    alt="Photo by Kaung Htet"
+                                    className="h-full w-full object-cover object-center"
+                                />
+                            </div>
+                            <div className="overflow-hidden rounded-lg bg-gray-100 shadow-lg">
+                                <img
+                                    src="https://images.unsplash.com/photo-1586295166487-b265f7e83a7f?auto=format&q=75&fit=crop&w=550&h=550"
+                                    loading="lazy"
+                                    alt="Photo by Manny Moreno"
                                     className="h-full w-full object-cover object-center"
                                 />
                             </div>
                         </div>
-                        <div className="md:pt-8">
-                            <p className="text-center font-bold text-indigo-500 md:text-left">
-                                Who we are
-                            </p>
-                            <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
-                                Our competitive advantage
-                            </h1>
-                            <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-                                This is a section of some simple filler text, also known as
-                                placeholder text. It shares some characteristics of a real written
-                                text but is random or otherwise generated. It may be used to display a
-                                sample of fonts or generate text for testing. Filler text is dummy
-                                text which has no meaning however looks very similar to real text.
-                                <br />
-                                <br />
-                                This is a section of some simple filler text, also known as
-                                placeholder text. It shares some characteristics of a real written
-                                text but is{" "}
-                                <a
-                                    href="#"
-                                    className="text-indigo-500 underline transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-                                >
-                                    random
-                                </a>{" "}
-                                or otherwise generated. It may be used to display a sample of fonts or
-                                generate text for testing. Filler text is dummy text which has no
-                                meaning however looks very similar to real text.
-                            </p>
-                            <h2 className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left">
-                                About us
-                            </h2>
-                            <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-                                This is a section of some simple filler text, also known as
-                                placeholder text. It shares some characteristics of a real written
-                                text but is random or otherwise generated. It may be used to display a
-                                sample of fonts or generate text for testing. Filler text is dummy
-                                text which has no meaning however looks very similar to real text.
-                            </p>
-                        </div>
+                        <button className="mt-12 relative bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded-lg p-4 shadow-lg transition duration-300 ease-in-out">
+                            <span className="absolute inset-0 bg-white opacity-20 rounded-lg" />
+                            <span className="relative text-gray-800 font-semibold">
+                                Neumorphism Button
+                            </span>
+                        </button>
+
                     </div>
-                </div>
+                </section>
             </div>
 
         </div>

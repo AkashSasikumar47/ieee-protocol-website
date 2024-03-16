@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Workflow = () => {
+const Highlights = () => {
     return (
         <div>
 
@@ -225,4 +225,4 @@ const Workflow = () => {
     )
 }
 
-export default Workflow
+export default Highlights
