@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div>
 
-            <div className="bg-gray-200 pb-6 sm:pb-8 lg:pb-12">
+            <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
                 <section className="mx-auto max-w-screen-2xl px-4 md:px-8">
                     <div className="mb-8 flex flex-wrap justify-between md:mb-16">
                         <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48">
@@ -36,13 +36,6 @@ const About = () => {
                                 />
                             </div>
                         </div>
-                        <button className="mt-12 relative bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 rounded-lg p-4 shadow-lg transition duration-300 ease-in-out">
-                            <span className="absolute inset-0 bg-white opacity-20 rounded-lg" />
-                            <span className="relative text-gray-800 font-semibold">
-                                Neumorphism Button
-                            </span>
-                        </button>
-
                     </div>
                 </section>
             </div>

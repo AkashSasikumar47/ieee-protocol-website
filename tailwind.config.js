@@ -31,8 +31,14 @@ module.exports = {
       },
       colors: {
         white: '#ffffff',
-        primary: '#DA5B4B',
-        secondary: '#913D37',
+        gray: {
+          '200': '#F4F5F7',
+          '300': '#DDE3ED',
+          '400': '#808B9F',
+          '500': '#5B6577',
+          '600': '#39404E',
+          '700': '#2C2D30',
+        },
         black: '#000000',
       },
       spacing: {
@@ -64,7 +70,8 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }

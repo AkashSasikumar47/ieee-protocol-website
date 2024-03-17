@@ -26,57 +26,18 @@ const Navbar = () => {
                             TechPulse
                         </a>
                         {/* logo - end */}
-                        {/* nav - start */}
-                        <nav className="hidden gap-12 lg:flex">
-                            <a href="#" className="text-lg font-semibold text-indigo-500">
-                                Home
-                            </a>
-                            <a
-                                href="#"
-                                className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-                            >
-                                Features
-                            </a>
-                            <a
-                                href="#"
-                                className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-                            >
-                                Pricing
-                            </a>
-                            <a
-                                href="#"
-                                className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-                            >
-                                About
-                            </a>
-                        </nav>
-                        {/* nav - end */}
-                        {/* buttons - start */}
-                        <a
-                            href="#"
-                            className="hidden rounded-lg bg-primary px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-                        >
-                            Contact Sales
+
+                        <a href="#_" className="relative inline-block text-lg group">
+                            <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-xl group-hover:text-white">
+                                <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-xl bg-gray-50" />
+                                <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease" />
+                                <span className="relative">REGISTER</span>
+                            </span>
+                            <span
+                                className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-xl group-hover:mb-0 group-hover:mr-0"
+                                data-rounded="rounded-xl"
+                            />
                         </a>
-                        <button
-                            type="button"
-                            className="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
-                            Menu
-                        </button>
-                        {/* buttons - end */}
                     </header>
                 </div>
             </div>
