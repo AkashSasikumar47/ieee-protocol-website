@@ -6,15 +6,19 @@ const Hero = () => {
 
             <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
-                        {/* image - start */}
-                        <img
-                            src="/TechPulse_Img/wallpaper-blue-orange-cubes-dark-background.jpg"
-                            loading="lazy"
-                            alt="Photo by Fakurian Design"
+                    <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-6xl bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
+                        {/* video - start */}
+                        <video
+                            src="/TechPulse_Img/190605(720p).mp4"
                             className="absolute inset-0 h-full w-full object-cover object-center"
-                        />
-                        {/* image - end */}
+                            autoPlay
+                            loop
+                            muted
+                        >
+                            Your browser does not support the video tag.
+                        </video>
+                        {/* video - end */}
+
                         {/* text start */}
                         <div className="relative flex flex-col items-center p-4 sm:max-w-xl">
                             <p className="mb-4 text-center text-lg text-gray-200 sm:text-xl md:mb-8">
@@ -43,7 +47,7 @@ const Hero = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
