@@ -5,15 +5,11 @@ import Head from 'next/head';
 
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
-import Sponsors from './components/Sponsors/Sponsors';
 import About from './components/About/About';
-import Themes from './components/Themes/Themes';
-import Speakers from './components/Speakers/Speakers';
-import Highlights from './components/Highlights/Highlights';
-import EventTimeline from './components/EventTimeline/EventTimeline';
+import Tracks from './components/Tracks/Tracks';
 import Mentors from './components/Mentors/Mentors';
+import EventTimeline from './components/EventTimeline/EventTimeline';
 import FAQ from './components/FAQ/FAQ';
-import Testimonial from './components/Testimonial/Testimonial';
 import Footer from './components/Footer/Footer';
 
 import '../app/globals.css';
@@ -21,7 +17,6 @@ import '../app/globals.css';
 const HomePage: React.FC = () => {
   return (
     <div>
-
       <Head>
         <title>TechTrek | Code Your Commerce Canvas</title>
         <meta name="description" content="Join TechTrek, the inaugural hackathon by IEEE SRM. Code your E-commerce website, collaborate, and innovate with like-minded enthusiasts." />
@@ -38,17 +33,12 @@ const HomePage: React.FC = () => {
 
       <Navbar />
       <Hero />
-      <Sponsors />
       <About />
-      <Themes />
-      <Speakers />
-      <Highlights />
-      <EventTimeline />
+      <Tracks />
       <Mentors />
+      <EventTimeline />
       <FAQ />
-      <Testimonial />
       <Footer />
-      
     </div>
   );
 };
