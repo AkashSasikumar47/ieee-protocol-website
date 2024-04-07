@@ -3,6 +3,19 @@ import React from 'react'
 const EventTimeline = () => {
     return (
         <section className="bg-green-100 max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
+            <div className="bg-gray-100 mx-auto mb-6">
+                <p className="mb-2 font-semibold text-indigo-500 md:mb-4 lg:text-lg">
+                    Introducing
+                </p>
+                <h2 className="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+                    Revolutionary way to build the web
+                </h2>
+                <p className="max-w-screen-md text-gray-500 md:text-lg">
+                    This is a section of some simple filler text, also known as placeholder
+                    text. It shares some characteristics of a real written text but is random
+                    or otherwise generated.
+                </p>
+            </div>
             <div className="bg-red-100 space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
                 <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">

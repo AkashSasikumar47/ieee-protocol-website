@@ -7,12 +7,10 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
-        serif: ['Georgia', 'serif'],
       },
       fontSize: {
         xs: '0.75rem',
@@ -62,10 +60,10 @@ module.exports = {
         '8xl': '6rem',
       },
       screens: {
-        sm: '480px',
+        sm: '640px',
         md: '768px',
-        lg: '976px',
-        xl: '1440px',
+        lg: '1024px',
+        xl: '1280px',
       },
     },
   },

@@ -2,66 +2,77 @@ import React from 'react'
 
 const Tracks = () => {
     return (
-        <section className="bg-green-100 max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
-            <div className="bg-red-100 grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+        <section className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
+            <div className="mx-auto mb-10">
+                <h3 className="mb-2 sm:mb-4 font-sans font-semibold text-blue-800 text-xs lg:text-base">
+                    TRACKS
+                </h3>
+                <h2 className="mb-4 md:mb-6 font-sans font-bold text-black text-2xl sm:text-4xl">
+                    Explore Our Tracks
+                </h2>
+                <h4 className="max-w-screen-sm font-sans font-base text-black text-sm sm:text-lg">
+                    At PROTOCOL 1.0, participants have the opportunity to explore and innovate within three exciting tracks
+                </h4>
+            </div>
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
                 <a
                     href="#"
-                    className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
+                    className="group relative flex h-48 items-end overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 shadow-lg md:h-80"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+                        src="/assets/Tracks/HealthTech Solutions.jpg"
                         loading="lazy"
-                        alt="Photo by Minh Pham"
+                        alt="HealthTech Solutions"
                         className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                     />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
-                    <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                        VR
+                    <span className="relative ml-4 mb-3 md:ml-7 md:mb-4 inline-block text-white text-sm lg:text-lg">
+                        HealthTech Solutions
                     </span>
                 </a>
                 <a
                     href="#"
-                    className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
+                    className="group relative flex h-48 items-end overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 shadow-lg md:col-span-2 md:h-80"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
+                        src="/assets/Tracks/Future Tech Innovations.jpg"
                         loading="lazy"
-                        alt="Photo by Magicle"
+                        alt="Future Tech Innovations"
                         className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                     />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
-                    <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                        Tech
+                    <span className="relative ml-4 mb-3 md:ml-7 md:mb-4 inline-block text-white text-sm lg:text-lg">
+                        Future Tech Innovations
                     </span>
                 </a>
                 <a
                     href="#"
-                    className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
+                    className="group relative flex h-48 items-end overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 shadow-lg md:col-span-2 md:h-80"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
+                        src="/assets/Tracks/Sustainable Development.jpg"
                         loading="lazy"
-                        alt="Photo by Martin Sanchez"
+                        alt="Sustainable Development"
                         className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                     />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
-                    <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                        Dev
+                    <span className="relative ml-4 mb-3 md:ml-7 md:mb-4 inline-block text-white text-sm lg:text-lg">
+                        Sustainable Development
                     </span>
                 </a>
                 <a
                     href="#"
-                    className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
+                    className="group relative flex h-48 items-end overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 shadow-lg md:h-80"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+                        src="/assets/Tracks/Open Ended.jpg"
                         loading="lazy"
-                        alt="Photo by Lorenzo Herrera"
+                        alt="Open Ended"
                         className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                     />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
-                    <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                        Retro
+                    <span className="relative ml-4 mb-3 md:ml-7 md:mb-4 inline-block text-white text-sm lg:text-lg">
+                        Open Ended
                     </span>
                 </a>
             </div>

@@ -3,6 +3,19 @@ import React from 'react'
 const Mentors = () => {
     return (
         <section className="bg-blue-100 max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
+            <div className="bg-gray-100 mx-auto mb-6">
+                <p className="mb-2 font-semibold text-indigo-500 md:mb-4 lg:text-lg">
+                    Introducing
+                </p>
+                <h2 className="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+                    Revolutionary way to build the web
+                </h2>
+                <p className="max-w-screen-md text-gray-500 md:text-lg">
+                    This is a section of some simple filler text, also known as placeholder
+                    text. It shares some characteristics of a real written text but is random
+                    or otherwise generated.
+                </p>
+            </div>
             <div className="bg-red-100 grid gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-4">
                 <div>
                     <a
