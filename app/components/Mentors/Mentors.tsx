@@ -2,107 +2,196 @@ import React from 'react'
 
 const Mentors = () => {
     return (
-        <section className="bg-blue-100 max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
-            <div className="bg-gray-100 mx-auto mb-6">
-                <p className="mb-2 font-semibold text-indigo-500 md:mb-4 lg:text-lg">
-                    Introducing
-                </p>
-                <h2 className="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-                    Revolutionary way to build the web
+        <section className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
+            <link
+                rel="stylesheet"
+                href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
+            />
+            <div className="mx-auto mb-10">
+                <h3 className="mb-2 sm:mb-4 font-sans font-semibold text-blue-800 text-xs lg:text-base">
+                    MENTORS
+                </h3>
+                <h2 className="mb-4 md:mb-6 font-sans font-bold text-black text-2xl sm:text-4xl">
+                    Meet Our Mentors
                 </h2>
-                <p className="max-w-screen-md text-gray-500 md:text-lg">
-                    This is a section of some simple filler text, also known as placeholder
-                    text. It shares some characteristics of a real written text but is random
-                    or otherwise generated.
-                </p>
+                <h4 className="max-w-screen-sm font-sans font-base text-black text-sm sm:text-lg">
+                    Get guidance from experienced mentors to elevate your hackathon experience at PROTOCOL 1.0.                </h4>
             </div>
-            <div className="bg-red-100 grid gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-4">
+            <div className="grid gap-x-4 gap-y-10 grid-cols-2 md:gap-x-6 lg:grid-cols-4 mb-8">
                 <div>
                     <a
                         href="#"
-                        className="group mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3"
+                        className="group mb-2 block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 lg:mb-3"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&q=75&fit=crop&crop=top&w=600&h=700"
+                            src="/assets/Mentors/Head.png"
                             loading="lazy"
-                            alt="Photo by Austin Wade"
+                            alt="Head"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                         />
                     </a>
-                    <div className="flex flex-col">
-                        <span className="text-gray-500">Men</span>
-                        <a
-                            href="#"
-                            className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl"
+                    <div className="text-center mt-6">
+                        <h1 className="mb-1 font-sans font-bold text-black text-base sm:text-xl">
+                            Akash Sasikumar
+                        </h1>
+                        <div className="mb-2 font-sans font-base text-black text-xs sm:text-base">
+                            Head - WAD
+                        </div>
+                        <div
+                            className="flex items-center justify-center opacity-50 hover:opacity-100
+                          transition-opacity duration-300"
                         >
-                            Business Causual
-                        </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-blue-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
+                            </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-gray-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
+                            </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-pink-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-instagram text-pink-500 mx-auto mt-2" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <a
                         href="#"
-                        className="group mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3"
+                        className="group mb-2 block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 lg:mb-3"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1603344797033-f0f4f587ab60?auto=format&q=75&fit=crop&crop=top&w=600&h=700"
+                            src="/assets/Mentors/Secretary.png"
                             loading="lazy"
-                            alt="Photo by engin akyurt"
+                            alt="Head"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                         />
                     </a>
-                    <div className="flex flex-col">
-                        <span className="text-gray-500">Women</span>
-                        <a
-                            href="#"
-                            className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl"
+                    <div className="text-center mt-6">
+                        <h1 className="mb-1 font-sans font-bold text-black text-base sm:text-xl">
+                            Kristen Talukdar
+                        </h1>
+                        <div className="mb-2 font-sans font-base text-black text-xs sm:text-base">
+                            Secretary - WAD
+                        </div>
+                        <div
+                            className="flex items-center justify-center opacity-50 hover:opacity-100
+                          transition-opacity duration-300"
                         >
-                            Summer Season
-                        </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-blue-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
+                            </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-gray-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
+                            </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-pink-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-instagram text-pink-500 mx-auto mt-2" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <a
                         href="#"
-                        className="group mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3"
+                        className="group mb-2 block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 lg:mb-3"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1552668693-d0738e00eca8?auto=format&q=75&fit=crop&crop=top&w=600&h=700"
+                            src="/assets/Mentors/Lead-Web.png"
                             loading="lazy"
-                            alt="Photo by Austin Wade"
+                            alt="Head"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                         />
                     </a>
-                    <div className="flex flex-col">
-                        <span className="text-gray-500">Men</span>
-                        <a
-                            href="#"
-                            className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl"
+                    <div className="text-center mt-6">
+                        <h1 className="mb-1 font-sans font-bold text-black text-base sm:text-xl">
+                            Lakshaya K
+                        </h1>
+                        <div className="mb-2 font-sans font-base text-black text-xs sm:text-base">
+                            Web Dev Lead - WAD
+                        </div>
+                        <div
+                            className="flex items-center justify-center opacity-50 hover:opacity-100
+                          transition-opacity duration-300"
                         >
-                            Streetwear
-                        </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-blue-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
+                            </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-gray-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
+                            </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-pink-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-instagram text-pink-500 mx-auto mt-2" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <a
                         href="#"
-                        className="group mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3"
+                        className="group mb-2 block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 lg:mb-3"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1560269999-cef6ebd23ad3?auto=format&q=75&fit=crop&w=600&h=700"
+                            src="/assets/Mentors/Lead-App.png"
                             loading="lazy"
-                            alt="Photo by Austin Wade"
+                            alt="Head"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                         />
                     </a>
-                    <div className="flex flex-col">
-                        <span className="text-gray-500">Women</span>
-                        <a
-                            href="#"
-                            className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl"
+                    <div className="text-center mt-6">
+                        <h1 className="mb-1 font-sans font-bold text-black text-base sm:text-xl">
+                            Sreeram A S
+                        </h1>
+                        <div className="mb-2 font-sans font-base text-black text-xs sm:text-base">
+                            App Dev Lead - WAD
+                        </div>
+                        <div
+                            className="flex items-center justify-center opacity-50 hover:opacity-100
+                          transition-opacity duration-300"
                         >
-                            Sale
-                        </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-blue-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
+                            </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-gray-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
+                            </a>
+                            <a
+                                href="#"
+                                className="flex rounded-full hover:bg-pink-50 h-10 w-10"
+                            >
+                                <i className="mdi mdi-instagram text-pink-500 mx-auto mt-2" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
