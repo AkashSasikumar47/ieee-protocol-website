@@ -10,6 +10,7 @@ import Tracks from './components/Tracks/Tracks';
 import Mentors from './components/Mentors/Mentors';
 import EventTimeline from './components/EventTimeline/EventTimeline';
 import FAQ from './components/FAQ/FAQ';
+import CTA from './components/CTA/CTA';
 import Footer from './components/Footer/Footer';
 
 import '../app/globals.css';
@@ -38,6 +39,7 @@ const HomePage: React.FC = () => {
       <Mentors />
       <EventTimeline />
       <FAQ />
+      <CTA />
       <Footer />
     </div>
   );
