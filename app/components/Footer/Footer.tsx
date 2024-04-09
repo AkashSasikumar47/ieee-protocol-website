@@ -15,17 +15,17 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-3">
-                    <p className="mb-2 font-sans font-base text-base sm:text-lg">
+                    <p className="mb-2 font-sans font-base text-gray-500 text-normal sm:text-lg">
                         We're part of the{' '}
                         <a
-                            className="font-sans font-bold text-base sm:text-lg hover:text-blue-800"
+                            className="font-sans font-bold text-normal sm:text-lg hover:text-blue-800"
                             href="https://www.ieee.org/"
                         >
                             IEEE
                         </a>{' '}
                         family.
                     </p>
-                    <p className="font-sans font-base text-xs sm:text-base">© 2024 IEEE SRM. All rights reserved.</p>
+                    <p className="font-sans font-base text-gray-500 text-xs sm:text-normal">© 2024 IEEE SRM. All rights reserved.</p>
                 </div>
 
             </div>

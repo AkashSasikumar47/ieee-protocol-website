@@ -14,10 +14,10 @@ const Mentors = () => {
                 <h2 className="mb-4 md:mb-6 font-sans font-bold text-black text-2xl sm:text-4xl">
                     Meet Our Mentors
                 </h2>
-                <h4 className="max-w-screen-sm font-sans font-base text-black text-sm sm:text-lg">
+                <h4 className="max-w-screen-sm font-sans font-base text-gray-500 text-sm sm:text-lg">
                     Get guidance from experienced mentors to elevate your hackathon experience at PROTOCOL 1.0.                </h4>
             </div>
-            <div className="grid gap-x-4 gap-y-10 grid-cols-2 md:gap-x-6 lg:grid-cols-4 mb-8">
+            <div className="grid gap-x-4 gap-y-10 grid-cols-2 md:gap-x-6 lg:grid-cols-4">
                 <div>
                     <a
                         href="#"
@@ -42,19 +42,19 @@ const Mentors = () => {
                           transition-opacity duration-300"
                         >
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/akash-sasikumar47/"
                                 className="flex rounded-full hover:bg-blue-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
                             </a>
                             <a
-                                href="#"
+                                href="https://github.com/AkashSasikumar47"
                                 className="flex rounded-full hover:bg-gray-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.instagram.com/akash__sasikumar/"
                                 className="flex rounded-full hover:bg-pink-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-instagram text-pink-500 mx-auto mt-2" />
@@ -86,13 +86,13 @@ const Mentors = () => {
                           transition-opacity duration-300"
                         >
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/kristen-talukdar-1b5335269/"
                                 className="flex rounded-full hover:bg-blue-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
                             </a>
                             <a
-                                href="#"
+                                href="https://github.com/kristentalukdar/"
                                 className="flex rounded-full hover:bg-gray-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
@@ -130,19 +130,19 @@ const Mentors = () => {
                           transition-opacity duration-300"
                         >
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/lakshayakrishnaraj/"
                                 className="flex rounded-full hover:bg-blue-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
                             </a>
                             <a
-                                href="#"
+                                href="https://github.com/pixelpurfect"
                                 className="flex rounded-full hover:bg-gray-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.instagram.com/itzlakshaya/?hl=en"
                                 className="flex rounded-full hover:bg-pink-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-instagram text-pink-500 mx-auto mt-2" />
@@ -174,19 +174,19 @@ const Mentors = () => {
                           transition-opacity duration-300"
                         >
                             <a
-                                href="#"
+                                href="linkedin.com/in/sreeram3927"
                                 className="flex rounded-full hover:bg-blue-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
                             </a>
                             <a
-                                href="#"
+                                href="github.com/sreeram3927"
                                 className="flex rounded-full hover:bg-gray-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
                             </a>
                             <a
-                                href="#"
+                                href="instagram.com/sreeram3927"
                                 className="flex rounded-full hover:bg-pink-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-instagram text-pink-500 mx-auto mt-2" />

@@ -8,9 +8,12 @@ const About = () => {
                     <h1 className="mb-4 font-sans font-bold text-black text-2xl sm:text-4xl">
                         About PROTOCOL 1.0
                     </h1>
-                    <p className="max-w-md leading-relaxed font-sans font-base text-black text-justify text-sm sm:text-lg">
+                    <p className="max-w-md leading-relaxed font-sans font-base text-gray-500 text-justify text-sm sm:text-lg">
                         PROTOCOL 1.0, is an innovative online hackathon aimed at empowering Computer Science and Engineering students to innovate and create impactful solutions. With a focus on fostering creativity and collaboration, PROTOCOL 1.0 provides participants with a platform to explore cutting-edge technologies and address real-world challenges.
                     </p>
+                    <a href="/EventDocumentation" className="text-blue-500 hover:underline mt-4">
+                        Know More
+                    </a>
                 </div>
                 <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
                     <div className="relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">

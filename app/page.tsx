@@ -19,17 +19,9 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>TechTrek | Code Your Commerce Canvas</title>
-        <meta name="description" content="Join TechTrek, the inaugural hackathon by IEEE SRM. Code your E-commerce website, collaborate, and innovate with like-minded enthusiasts." />
-        <meta name="keywords" content="TechTrek, IEEE SRMIST, hackathon, ideation, opportunities" />
-        <link rel="icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/Logo/apple-touch-icon.png" />
-
-        <meta name="author" content="Akash Sasikumar" />
-        <meta property="og:title" content="TechTrek | Code Your Commerce Canvas" />
-        <meta property="og:description" content="Join TechTrek, the inaugural hackathon by IEEE SRM. Code your E-commerce website, collaborate, and innovate with like-minded enthusiasts." />
-        <meta property="og:image" content="/img/TechTrek_Banner.png" />
-        <meta property="og:url" content="https://techtrek.ieeesrmist.com" />
+        <title>PROTOCOL 1.0 | Hackathon by IEEE SRMIST</title>
+        <meta name="description" content="Empower Computer Science and Engineering students to innovate and create impactful solutions using cutting-edge technologies in a supportive online environment. Join PROTOCOL 1.0 hackathon now!" />
+        <meta name="keywords" content="PROTOCOL 1.0, hackathon, IEEE SRMIST, computer science, engineering, innovation, technology" />
       </Head>
 
       <Navbar />

@@ -10,7 +10,7 @@ const EventTimeline = () => {
                 <h2 className="mb-4 md:mb-6 font-sans font-bold text-black text-2xl sm:text-4xl">
                     Hackathon Schedule
                 </h2>
-                <h4 className="max-w-screen-sm font-sans font-base text-black text-sm sm:text-lg">
+                <h4 className="max-w-screen-sm font-sans font-base text-gray-500 text-sm sm:text-lg">
                     Stay on track with our hackathon schedule, from introduction to project submission and results declaration.
                 </h4>
             </div>

@@ -10,7 +10,7 @@ const Tracks = () => {
                 <h2 className="mb-4 md:mb-6 font-sans font-bold text-black text-2xl sm:text-4xl">
                     Explore Our Tracks
                 </h2>
-                <h4 className="max-w-screen-sm font-sans font-base text-black text-sm sm:text-lg">
+                <h4 className="max-w-screen-sm font-sans font-base text-gray-500 text-sm sm:text-lg">
                     At PROTOCOL 1.0, participants have the opportunity to explore and innovate within three exciting tracks
                 </h4>
             </div>

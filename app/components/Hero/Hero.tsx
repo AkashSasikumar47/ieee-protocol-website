@@ -1,10 +1,36 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react';
 
-const Hero = () => {
+const Hero: React.FC = () => {
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+
+    useEffect(() => {
+        const playVideo = () => {
+            if (videoRef.current) {
+                videoRef.current.play()
+                    .then(() => { })
+                    .catch(error => {
+                        console.error('Error playing video:', error);
+                    });
+            }
+        };
+
+        const handleInteraction = () => {
+            playVideo();
+            document.removeEventListener('click', handleInteraction);
+        };
+
+        document.addEventListener('click', handleInteraction);
+
+        return () => {
+            document.removeEventListener('click', handleInteraction);
+        };
+    }, []);
+
     return (
         <div className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
-            <section className="relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-6xl bg-gray-100 shadow-lg py-24 md:py-36">
+            <main className="relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-6xl bg-gray-100 shadow-lg py-24 md:py-36">
                 <video
+                    ref={videoRef}
                     src="/videos/190605(720p).mp4"
                     className="absolute inset-0 h-full w-full object-cover object-center"
                     autoPlay
@@ -34,9 +60,9 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-            </section>
+            </main>
         </div>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;

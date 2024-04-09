@@ -27,16 +27,14 @@ module.exports = {
         '8xl': '6rem',
         '9xl': '8rem',
       },
+      fontWeight: {
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+      },
       colors: {
         white: '#ffffff',
-        gray: {
-          '200': '#F4F5F7',
-          '300': '#DDE3ED',
-          '400': '#808B9F',
-          '500': '#5B6577',
-          '600': '#39404E',
-          '700': '#2C2D30',
-        },
         black: '#000000',
       },
       spacing: {
@@ -64,6 +62,7 @@ module.exports = {
         md: '768px',
         lg: '1024px',
         xl: '1280px',
+        '2xl': '1536px',
       },
     },
   },
