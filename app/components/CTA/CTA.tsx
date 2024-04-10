@@ -1,8 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const CTA = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+    });
+
     return (
-        <section className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
+        <motion.section
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+            transition={{ duration: 1 }}
+            className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10"
+        >
             <div className="mx-auto mb-10 items-center justify-center text-center">
                 <h3 className="mb-2 sm:mb-4 font-sans font-semibold text-blue-800 text-xs lg:text-base">
                     JOIN US
@@ -15,7 +28,7 @@ const CTA = () => {
                 </h4>
             </div>
             <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
-                <a href="#" className="relative inline-block text-lg text-center group">
+                <a href="https://discord.gg/aCfaC3Ywhh" className="relative inline-block text-lg text-center group">
                     <span className="relative z-10 block px-5 py-3 overflow-hidden font-sans font-medium leading-tight text-blue-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-xl group-hover:text-blue-500">
                         <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-xl bg-gray-50" />
                         <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease" />
@@ -27,8 +40,8 @@ const CTA = () => {
                     />
                 </a>
             </div>
-        </section>
-    )
-}
+        </motion.section>
+    );
+};
 
-export default CTA
+export default CTA;

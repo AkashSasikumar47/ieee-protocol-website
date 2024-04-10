@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 
 const Hero: React.FC = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
+    const textControls = useAnimation();
 
     useEffect(() => {
         const playVideo = () => {
@@ -21,6 +23,12 @@ const Hero: React.FC = () => {
 
         document.addEventListener('click', handleInteraction);
 
+        textControls.start({
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, delay: 0.5 }
+        });
+
         return () => {
             document.removeEventListener('click', handleInteraction);
         };
@@ -39,15 +47,23 @@ const Hero: React.FC = () => {
                 >
                     Your browser does not support the video tag.
                 </video>
-                <div className="relative flex flex-col items-center p-4 lg:px-36">
+                <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={textControls}
+                    className="relative flex flex-col items-center p-4 lg:px-36"
+                >
                     <p className="mb-4 md:mb-8 font-sans font-medium text-center text-white text-lg sm:text-2xl">
                         PROTOCOL 1.0
                     </p>
-                    <h1 className="mb-8 lg:mb-12 xl:px-24 font-sans font-bold text-center text-white text-4xl xl:text-6xl">
+                    <motion.h1
+                        className="mb-8 lg:mb-12 xl:px-24 font-sans font-bold text-center text-white text-4xl xl:text-6xl"
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={textControls}
+                    >
                         Empowering Innovations in Tech
-                    </h1>
+                    </motion.h1>
                     <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
-                        <a href="https://registrations.ieeesrmist.com/" className="relative inline-block text-lg text-center group">
+                        <a href="https://registrations.ieeesrmist.com/protocol" className="relative inline-block text-lg text-center group">
                             <span className="relative z-10 block px-5 py-3 overflow-hidden font-sans font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-xl group-hover:text-white">
                                 <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-xl bg-gray-50" />
                                 <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease" />
@@ -59,7 +75,7 @@ const Hero: React.FC = () => {
                             />
                         </a>
                     </div>
-                </div>
+                </motion.div>
             </main>
         </div>
     );

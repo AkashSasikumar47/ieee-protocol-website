@@ -1,8 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
-const EventTimeline = () => {
+const AnimatedEventTimeline = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+    });
+
     return (
-        <section className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
+        <motion.section
+            ref={ref}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+            transition={{ duration: 1 }}
+            className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10"
+        >
             <div className="mx-auto mb-10">
                 <h3 className="mb-2 sm:mb-4 font-sans font-semibold text-blue-800 text-xs lg:text-base">
                     EVENT TIMELINE
@@ -64,8 +77,8 @@ const EventTimeline = () => {
                     </div>
                 </div>
             </div>
-        </section >
-    )
-}
+        </motion.section>
+    );
+};
 
-export default EventTimeline
+export default AnimatedEventTimeline;

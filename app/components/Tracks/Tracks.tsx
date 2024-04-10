@@ -1,8 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
-const Tracks = () => {
+const AnimatedTracks = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+    });
+
     return (
-        <section className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
+        <motion.section
+            ref={ref}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+            transition={{ duration: 0.5 }}
+            className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10"
+        >
             <div className="mx-auto mb-10">
                 <h3 className="mb-2 sm:mb-4 font-sans font-semibold text-blue-800 text-xs lg:text-base">
                     TRACKS
@@ -15,7 +28,10 @@ const Tracks = () => {
                 </h4>
             </div>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-                <a
+                <motion.a
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.8 }}
+                    transition={{ duration: 0.5 }}
                     href="#"
                     className="group relative flex h-48 items-end overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 shadow-lg md:h-80"
                 >
@@ -29,8 +45,11 @@ const Tracks = () => {
                     <span className="relative ml-4 mb-3 md:ml-7 md:mb-4 inline-block text-white text-sm lg:text-lg">
                         HealthTech Solutions
                     </span>
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.8 }}
+                    transition={{ duration: 0.5 }}
                     href="#"
                     className="group relative flex h-48 items-end overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 shadow-lg md:col-span-2 md:h-80"
                 >
@@ -44,8 +63,11 @@ const Tracks = () => {
                     <span className="relative ml-4 mb-3 md:ml-7 md:mb-4 inline-block text-white text-sm lg:text-lg">
                         Future Tech Innovations
                     </span>
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.8 }}
+                    transition={{ duration: 0.5 }}
                     href="#"
                     className="group relative flex h-48 items-end overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 shadow-lg md:col-span-2 md:h-80"
                 >
@@ -59,8 +81,11 @@ const Tracks = () => {
                     <span className="relative ml-4 mb-3 md:ml-7 md:mb-4 inline-block text-white text-sm lg:text-lg">
                         Sustainable Development
                     </span>
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.8 }}
+                    transition={{ duration: 0.5 }}
                     href="#"
                     className="group relative flex h-48 items-end overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 shadow-lg md:h-80"
                 >
@@ -74,10 +99,10 @@ const Tracks = () => {
                     <span className="relative ml-4 mb-3 md:ml-7 md:mb-4 inline-block text-white text-sm lg:text-lg">
                         Open Ended
                     </span>
-                </a>
+                </motion.a>
             </div>
-        </section >
-    )
-}
+        </motion.section>
+    );
+};
 
-export default Tracks
+export default AnimatedTracks;

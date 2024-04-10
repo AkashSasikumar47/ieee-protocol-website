@@ -5,6 +5,7 @@ import Head from 'next/head';
 
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import EventCountdown from './components/EventCountdown/EventCountdown';
 import About from './components/About/About';
 import Tracks from './components/Tracks/Tracks';
 import Mentors from './components/Mentors/Mentors';
@@ -19,13 +20,15 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>PROTOCOL 1.0 | Hackathon by IEEE SRMIST</title>
+        <title>PROTOCOL 1.0 | IEEE SRMIST</title>
         <meta name="description" content="Empower Computer Science and Engineering students to innovate and create impactful solutions using cutting-edge technologies in a supportive online environment. Join PROTOCOL 1.0 hackathon now!" />
         <meta name="keywords" content="PROTOCOL 1.0, hackathon, IEEE SRMIST, computer science, engineering, innovation, technology" />
+        <link rel="icon" href="/favicon.ico?v=2" />
       </Head>
 
       <Navbar />
       <Hero />
+      <EventCountdown />
       <About />
       <Tracks />
       <Mentors />

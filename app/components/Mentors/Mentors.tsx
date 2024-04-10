@@ -1,8 +1,32 @@
-import React from 'react'
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
-const Mentors = () => {
+const AnimatedMentors = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+    });
+
+    const mentorVariants = {
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
+    };
+
+    const iconVariants = {
+        hidden: { opacity: 0, scale: 0 },
+        visible: { opacity: 1, scale: 1, transition: { delay: 0.5 } },
+    };
+
     return (
-        <section className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10">
+        <motion.section
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={mentorVariants}
+            transition={{ duration: 1 }}
+            className="max-w-screen-xl mx-auto px-4 py-6 md:px-8 md:py-10"
+        >
             <link
                 rel="stylesheet"
                 href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
@@ -15,16 +39,20 @@ const Mentors = () => {
                     Meet Our Mentors
                 </h2>
                 <h4 className="max-w-screen-sm font-sans font-base text-gray-500 text-sm sm:text-lg">
-                    Get guidance from experienced mentors to elevate your hackathon experience at PROTOCOL 1.0.                </h4>
+                    Get guidance from experienced mentors to elevate your hackathon experience at PROTOCOL 1.0.
+                </h4>
             </div>
             <div className="grid gap-x-4 gap-y-10 grid-cols-2 md:gap-x-6 lg:grid-cols-4">
-                <div>
+                <motion.div
+                    className="mb-2"
+                    variants={iconVariants}
+                >
                     <a
                         href="#"
-                        className="group mb-2 block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 lg:mb-3"
+                        className="group block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100"
                     >
                         <img
-                            src="/assets/Mentors/Head.png"
+                            src="/assets/Mentors/Head.jpg"
                             loading="lazy"
                             alt="Head"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -37,10 +65,7 @@ const Mentors = () => {
                         <div className="mb-2 font-sans font-base text-black text-xs sm:text-base">
                             Head - WAD
                         </div>
-                        <div
-                            className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300"
-                        >
+                        <div className="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
                             <a
                                 href="https://www.linkedin.com/in/akash-sasikumar47/"
                                 className="flex rounded-full hover:bg-blue-50 h-10 w-10"
@@ -61,16 +86,20 @@ const Mentors = () => {
                             </a>
                         </div>
                     </div>
-                </div>
-                <div>
+                </motion.div>
+
+                <motion.div
+                    className="mb-2"
+                    variants={iconVariants}
+                >
                     <a
                         href="#"
-                        className="group mb-2 block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 lg:mb-3"
+                        className="group block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100"
                     >
                         <img
-                            src="/assets/Mentors/Secretary.png"
+                            src="/assets/Mentors/Secretary.jpg"
                             loading="lazy"
-                            alt="Head"
+                            alt="Secretary"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                         />
                     </a>
@@ -81,10 +110,7 @@ const Mentors = () => {
                         <div className="mb-2 font-sans font-base text-black text-xs sm:text-base">
                             Secretary - WAD
                         </div>
-                        <div
-                            className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300"
-                        >
+                        <div className="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
                             <a
                                 href="https://www.linkedin.com/in/kristen-talukdar-1b5335269/"
                                 className="flex rounded-full hover:bg-blue-50 h-10 w-10"
@@ -105,16 +131,20 @@ const Mentors = () => {
                             </a>
                         </div>
                     </div>
-                </div>
-                <div>
+                </motion.div>
+
+                <motion.div
+                    className="mb-2"
+                    variants={iconVariants}
+                >
                     <a
                         href="#"
-                        className="group mb-2 block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 lg:mb-3"
+                        className="group block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100"
                     >
                         <img
-                            src="/assets/Mentors/Lead-Web.png"
+                            src="/assets/Mentors/Lead-Web.jpg"
                             loading="lazy"
-                            alt="Head"
+                            alt="Lead-Web"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                         />
                     </a>
@@ -125,10 +155,7 @@ const Mentors = () => {
                         <div className="mb-2 font-sans font-base text-black text-xs sm:text-base">
                             Web Dev Lead - WAD
                         </div>
-                        <div
-                            className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300"
-                        >
+                        <div className="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
                             <a
                                 href="https://www.linkedin.com/in/lakshayakrishnaraj/"
                                 className="flex rounded-full hover:bg-blue-50 h-10 w-10"
@@ -149,16 +176,20 @@ const Mentors = () => {
                             </a>
                         </div>
                     </div>
-                </div>
-                <div>
+                </motion.div>
+
+                <motion.div
+                    className="mb-2"
+                    variants={iconVariants}
+                >
                     <a
                         href="#"
-                        className="group mb-2 block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100 lg:mb-3"
+                        className="group block h-120 overflow-hidden rounded-4xl sm:rounded-6xl bg-gray-100"
                     >
                         <img
-                            src="/assets/Mentors/Lead-App.png"
+                            src="/assets/Mentors/Lead-App.jpg"
                             loading="lazy"
-                            alt="Head"
+                            alt="Lead-App"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                         />
                     </a>
@@ -169,34 +200,31 @@ const Mentors = () => {
                         <div className="mb-2 font-sans font-base text-black text-xs sm:text-base">
                             App Dev Lead - WAD
                         </div>
-                        <div
-                            className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300"
-                        >
+                        <div className="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
                             <a
-                                href="linkedin.com/in/sreeram3927"
+                                href="http://linkedin.com/in/sreeram3927"
                                 className="flex rounded-full hover:bg-blue-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-linkedin text-blue-500 mx-auto mt-2" />
                             </a>
                             <a
-                                href="github.com/sreeram3927"
+                                href="http://github.com/sreeram3927"
                                 className="flex rounded-full hover:bg-gray-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-github text-black-300 mx-auto mt-2" />
                             </a>
                             <a
-                                href="instagram.com/sreeram3927"
+                                href="http://instagram.com/sreeram3927"
                                 className="flex rounded-full hover:bg-pink-50 h-10 w-10"
                             >
                                 <i className="mdi mdi-instagram text-pink-500 mx-auto mt-2" />
                             </a>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </section>
-    )
-}
+        </motion.section>
+    );
+};
 
-export default Mentors
+export default AnimatedMentors;
