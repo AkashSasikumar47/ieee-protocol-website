@@ -30,7 +30,7 @@ PROTOCOL 1.0 is an innovative online hackathon aimed at empowering Computer Scie
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/AkashSasikumar47/ieee-protocol-website.git`
-2. Navigate to the project directory: `cd ieee-hacktrix-website`
+2. Navigate to the project directory: `cd ieee-protocol-website`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
@@ -50,4 +50,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or suggestions regarding the HackTrix Website project, feel free to contact us at [ieee@srmist.edu.in](mailto:ieee@srmist.edu.in).
+If you have any questions or suggestions regarding the PROTOCOL 1.0 Website project, feel free to contact us at [ieee@srmist.edu.in](mailto:ieee@srmist.edu.in).
