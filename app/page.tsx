@@ -5,6 +5,7 @@ import Head from 'next/head';
 
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import Winners from './components/Winners/Winners';
 import EventCountdown from './components/EventCountdown/EventCountdown';
 import About from './components/About/About';
 import Tracks from './components/Tracks/Tracks';
@@ -28,7 +29,7 @@ const HomePage: React.FC = () => {
 
       <Navbar />
       <Hero />
-      <EventCountdown />
+      <Winners />
       <About />
       <Tracks />
       <Mentors />
